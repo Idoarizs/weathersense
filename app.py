@@ -1,12 +1,15 @@
 import base64
 import numpy as np
-
+import os
 from io import BytesIO
 from PIL import UnidentifiedImageError
-
 from flask import Flask, request, jsonify
 from tensorflow.keras.preprocessing.image import load_img, img_to_array
 from tensorflow.keras.models import load_model
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Labels for classification
 labels = {
@@ -22,7 +25,10 @@ labels = {
 # Flask application
 app = Flask(__name__)
 allowed_extensions = ['.jpg', '.jpeg', '.png']
-model = load_model('WeatherSense_Model.h5')
+
+# Get the model path from the environment variable, or use default if not set
+model_path = os.getenv('MODEL_PATH', 'WeatherSense_Model.h5')
+model = load_model(model_path)
 
 def preprocess_image(image):
     """Preprocess the image for model prediction."""
