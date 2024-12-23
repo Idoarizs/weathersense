@@ -1,4 +1,4 @@
-# 🌦️ WeatherSense AI API
+# 🌦️ WeatherSense API
 
 WeatherSense AI API utilizes a pre-trained machine learning model to classify weather conditions from uploaded images. With just an image, it predicts whether the weather is **cloudy**, **foggy**, **lightning**, **rainy**, **sandstorm**, **snowy**, or **sunny**. Perfect for integrating AI-powered weather predictions into your apps! 🌤️
 
