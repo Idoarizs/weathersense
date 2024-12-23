@@ -29,3 +29,13 @@ WeatherSense AI API utilizes a pre-trained machine learning model to classify we
   - **Error**: Returns an error message if the file type is unsupported or if the image is invalid.
 
 ---
+
+## 💻 Example Request
+
+**URL**: `POST http://<url>/predict`
+
+**Body** (using `multipart/form-data`):
+```json
+{
+  "image": "<image>.jpg"
+}
