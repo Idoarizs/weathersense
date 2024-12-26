@@ -1,3 +1,7 @@
+# File
 *.h5
-/venv
-.env
+*.env
+
+# Folder
+venv
+instance
