@@ -1,14 +1,11 @@
-bcrypt==4.2.1
-colorama==0.4.6
 DateTime==5.5
 Flask==3.1.0
 Flask-Bcrypt==1.0.1
 Flask-JWT-Extended==4.7.1
 Flask-Migrate==4.0.7
 Flask-SQLAlchemy==3.1.1
-flatbuffers==24.12.23
+mysql-connector-python==9.1.0
 numpy==2.0.2
 pillow==11.0.0
+python-dotenv==1.0.1
 tensorflow==2.18.0
-torch==2.5.1
-torchvision==0.20.1
